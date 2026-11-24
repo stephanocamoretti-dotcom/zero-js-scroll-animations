@@ -23,8 +23,8 @@ Ready-to-copy **pure CSS Scroll-Driven Animations** using `animation-timeline: s
 ```mermaid
 flowchart LR
     Scroll["User Scroll Gesture"] --> Comp["Browser Compositor Thread"]
-    Comp -->|scroll(root block)| Bar["Progress Bar scaleX()"]
-    Comp -->|view() + animation-range| Cards["Card Reveal Transform & Opacity"]
+    Comp -->|"scroll root block"| Bar["Progress Bar scaleX"]
+    Comp -->|"view timeline + animation-range"| Cards["Card Reveal Transform & Opacity"]
 ```
 
 ---

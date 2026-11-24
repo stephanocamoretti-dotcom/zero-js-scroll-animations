@@ -23,8 +23,8 @@ Patrones listos para usar de **animaciones ligadas al scroll en CSS puro** usand
 ```mermaid
 flowchart LR
     Scroll["Scroll del Usuario"] --> Comp["Compositor GPU del Navegador"]
-    Comp -->|scroll(root block)| Bar["Barra de progreso scaleX()"]
-    Comp -->|view() + animation-range| Cards["Entrada de tarjetas sin JS"]
+    Comp -->|"scroll root block"| Bar["Barra de progreso scaleX"]
+    Comp -->|"view timeline + animation-range"| Cards["Entrada de tarjetas sin JS"]
 ```
 
 ---
