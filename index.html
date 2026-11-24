@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zero-JS Scroll Animations</title>
+    <link rel="stylesheet" href="./scroll-animations.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="hero">
+      <span class="badge">PURE CSS · 0 BYTES JS</span>
+      <h1>Zero-JS Scroll Animations</h1>
+      <p>GPU-composited <code>animation-timeline: scroll()</code> and <code>view()</code> patterns.</p>
+    </header>
+
+    <main class="cards">
+      <article class="reveal-card">
+        <h2>01 · Reading Progress Bar</h2>
+        <p>Driven by <code>animation-timeline: scroll(root block)</code> on the compositor thread.</p>
+      </article>
+      <article class="reveal-card">
+        <h2>02 · Viewport Reveal</h2>
+        <p>Triggered automatically with <code>animation-timeline: view()</code> and <code>animation-range</code>.</p>
+      </article>
+      <article class="reveal-card">
+        <h2>03 · Zero Main-Thread Jank</h2>
+        <p>No IntersectionObserver loops, no scroll event listeners, and smooth 120Hz scrolling.</p>
+      </article>
+    </main>
+  </body>
+</html>
